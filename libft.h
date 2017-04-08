@@ -90,6 +90,6 @@ char				*ft_wordbuilder(char const *str, char c, unsigned int *in);
 char				*ft_strndup(const char *s1, size_t n);
 int					ft_wordcount(const char *str, char c);
 void				ft_swap(int *x, int *y);
-void				ft_swaplol(int *x, int *y, int *x1, int *y1);
+void				ft_swaptwo(int *x, int *y, int *x1, int *y1);
 
 #endif

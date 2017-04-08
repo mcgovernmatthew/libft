@@ -71,7 +71,7 @@ SRC_NAME = 	ft_atoi.c \
 			get_next_line.c \
 			ft_wordcount.c \
 			ft_swap.c \
-			ft_swaplol.c
+			ft_swaptwo.c
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 

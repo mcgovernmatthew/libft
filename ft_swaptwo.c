@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wordcount.c                                     :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmcgover <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/24 20:30:45 by mmcgover          #+#    #+#             */
-/*   Updated: 2017/03/24 20:30:46 by mmcgover         ###   ########.fr       */
+/*   Created: 2017/03/22 17:22:20 by mmcgover          #+#    #+#             */
+/*   Updated: 2017/03/24 19:30:54 by mmcgover         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_wordcount(const char *str, char c)
-{
-	int i;
-	int count;
+#include "libft.h"
 
-	i = -1;
-	count = 0;
-	while (str[++i] != '\0')
-		if (str[i] != c && (str[i - 1] == c || i == 0))
-			count++;
-	return (count);
+void			ft_swaptwo(int *x, int *y, int *x1, int *y1)
+{
+	int			c;
+	int			d;
+
+	c = *x;
+	*x = *y;
+	*y = c;
+	d = *x1;
+	*x1 = *y1;
+	*y1 = d;
 }
